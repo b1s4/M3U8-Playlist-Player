@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3U8 HLS Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>M3U8 HLS Player</h1>
+<p>https://fast-channels.atresmedia.com/648ef3951756b0e425af83cc/648ef3951756b0e425af83cc.m3u8</p>
+<p>https://tv.nknews.org/tvhls/stream.m3u8</p>
+        <div class="controls">
+            <input type="file" id="fileInput" accept=".m3u8">
+            <input type="url" id="urlInput" placeholder="Enter the URL of the list">
+            <button id="loadUrlButton">Load list</button>
+        </div>
+
+        <div class="direct-channel">
+            <input type="url" id="directChannelInput" placeholder="Enter URL of an M3U8 channel">
+            <button id="playDirectButton">Play</button>
+        </div>
+
+        <div id="channelGrid" class="grid-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
