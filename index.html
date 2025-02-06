@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M3U8 HLS Player</title>
+    <title>M3U8 y MP4 Player</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>M3U8 HLS Player</h1>
-<p>https://b1s4.github.io/M3U8-Playlist-Player/list.m3u8</p>
+        <h1>Lista de Canales y Reproductores Directos</h1>
+
         <div class="controls">
             <input type="file" id="fileInput" accept=".m3u8">
-            <input type="url" id="urlInput" placeholder="Enter the URL of the list">
-            <button id="loadUrlButton">Load list</button>
+            <input type="url" id="urlInput" placeholder="Introduce la URL de la lista">
+            <button id="loadUrlButton">Cargar Lista</button>
         </div>
 
         <div class="direct-channel">
-            <input type="url" id="directChannelInput" placeholder="Enter URL of an M3U8 channel">
-            <button id="playDirectButton">Play</button>
+            <input type="url" id="directChannelInput" placeholder="Introduce URL de un canal M3U8">
+            <button id="playDirectButton">Reproducir M3U8</button>
+        </div>
+
+        <div class="direct-channel">
+            <input type="url" id="mp4ChannelInput" placeholder="Introduce URL de un archivo MP4">
+            <button id="playMp4Button">Reproducir MP4</button>
         </div>
 
         <div id="channelGrid" class="grid-container"></div>
